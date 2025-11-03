@@ -487,7 +487,7 @@ const enterPressed = function(input) {
     addTextBox(input, true);
     consoleInput.value = "";
     historyContainer.scrollTop = historyContainer.scrollHeight;
-    setTimeout(isValidCommand, 400, input)
+    setTimeout(isValidCommand, 400, input.toLowerCase())
     
     
 }
@@ -552,4 +552,5 @@ console.log(inventory)
 addTextBox(`Text based rpg (insert name later)${nl}Beta 1.0${nl}${nl}thanks for playing${nl}by CookieMage27${nl}type start to begin${nl}type help for commands list`, false);
 addTextBox("", false);
 //initiallize the loop
+
 window.requestAnimationFrame(loop);
